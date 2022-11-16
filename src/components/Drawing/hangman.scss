@@ -1,0 +1,80 @@
+.drawing {
+  position: relative;
+  div {
+    background-color: black;
+  }
+  .base {
+    height: 10px;
+    width: 250px;
+  }
+  .post {
+    height: 350px;
+    width: 10px;
+    margin-left: 120px;
+  }
+  .beam {
+    height: 10px;
+    width: 200px;
+    margin-left: 120px;
+  }
+  .rope {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 10px;
+  }
+  .head {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: unset;
+    border: 10px solid black;
+    position: absolute;
+    top: 50px;
+    right: -30px;
+  }
+  .body {
+    width: 10px;
+    height: 90px;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+  }
+  .rightArm {
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 130px;
+    right: -75px;
+    rotate: 30deg;
+    transform-origin: left top;
+  }
+  .leftArm {
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    rotate: -30deg;
+    transform-origin: right top;
+  }
+  .rightLeg {
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 204px;
+    right: -75px;
+    rotate: 65deg;
+    transform-origin: left top;
+  }
+  .leftLeg {
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 204px;
+    right: 10px;
+    rotate: -65deg;
+    transform-origin: right top;
+  }
+}
