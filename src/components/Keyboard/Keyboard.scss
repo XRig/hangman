@@ -1,0 +1,28 @@
+.keyboard {
+  .btn {
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    &.found {
+      background-color: rgb(205, 239, 205);
+    }
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: hsl(200, 100%, 75%);
+    }
+
+    &.disabled {
+      opacity: 0.3;
+    }
+  }
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 0.5rem;
+  & div {
+  }
+}
