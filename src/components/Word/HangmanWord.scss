@@ -1,0 +1,25 @@
+.Hang_Word {
+  display: flex;
+  gap: 0.25em;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+
+span {
+  border-bottom: 0.1em solid black;
+  span {
+    visibility: hidden;
+    &.found {
+      visibility: visible;
+    }
+    &.missed {
+      visibility: visible;
+      color: red;
+    }
+  }
+}
